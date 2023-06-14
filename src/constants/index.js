@@ -13,16 +13,21 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    solidity,
     threejs,
+    pokemon,
+    crowdfunding,
+    employee,
+    travelBlog,
+    matricula,
+    iqapex,
+    bigData,
+    Coursera,
+    IBM,
+    doubleSlash,
+    internship,
+    urekon,
   } from "../assets";
   
   export const navLinks = [
@@ -42,7 +47,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack (MERN) Web Developer",
       icon: web,
     },
     {
@@ -54,7 +59,7 @@ import {
       icon: backend,
     },
     {
-      title: "Mern Stack Developer",
+      title: "Frontend Developer",
       icon: creator,
     },
   ];
@@ -106,7 +111,7 @@ import {
     },
     {
       name: "solidity",
-      icon: figma,
+      icon: solidity,
     },
     {
       name: "docker",
@@ -118,11 +123,13 @@ import {
     {
       title: "Full Stack Developer",
       company_name: "Matricula",
-      icon: starbucks,
+      icon: matricula,
       iconBg: "#383E56",
       date: "August 2022 - Octoper 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using mern stack and other related technologies.",
+        "Creating platform for students to apply for exams.",
+        "HR management tool to track activities for employees.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -131,11 +138,13 @@ import {
     {
       title: "Full Stack Developer",
       company_name: "IQapex Labs",
-      icon: tesla,
+      icon: iqapex,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - March 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using mern stack and other related technologies.",
+        "Creating new features for a lawyer client website interaction.",
+        "Working on backend , creating rest apis for the main website",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -144,30 +153,54 @@ import {
 
   ];
   
-  const testimonials = [
+  const certificates = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      certificate:
+        "Cerificate for coding competition in recognition of Mobilewalla Big Data Challenge Round-1(Coding)",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: bigData,
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      certificate:
+        "Internship completion Certificate on full stack mainly using mern stack .",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      image: internship,
     },
     {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      certificate:
+        "Course certificate from IBM for Introduction to Cloud Development with HTML, CSS, and JavaScript.",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      image: IBM,
+    },
+    {
+      certificate:
+        "Coursera certificate for Object Oriented Programming in Python.",
+      name: "Lisa Wang",
+      designation: "CTO",
+      company: "456 Enterprises",
+      image: Coursera,
+    },
+    {
+      certificate:
+        "IEEE Double Slash competition certificate qualifing to the final round.",
+      name: "Lisa Wang",
+      designation: "CTO",
+      company: "456 Enterprises",
+      image: doubleSlash,
+    },
+    {
+      certificate:
+        "Ureckon certificate competition. Project submitted using mern stack of crowdfunding.",
+      name: "Lisa Wang",
+      designation: "CTO",
+      company: "456 Enterprises",
+      image: urekon,
     },
   ];
   
@@ -175,8 +208,13 @@ import {
     {
       name: "Employee Managemnt App",
       description:
-        "Web-based platform that allows users to track activities for employees",
+        "Web-based platform that allows users to track activities for employees it is a technology designed to streamline core HR services and improve workforce productivity. It accomplishes these goals largely by automating labor-intensive, administrative tasks and using analytics to drive business decisions.",
+
       tags: [
+        {
+          name: "open in desktop",
+          color: "white-text-gradient",
+        },
         {
           name: "react",
           color: "blue-text-gradient",
@@ -186,20 +224,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://employee-management-diksha1627.netlify.app/",
-    },
-    {
-      name: "CrowdFunding App",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
+          name: "nodejs",
           color: "blue-text-gradient",
         },
         {
@@ -207,34 +232,100 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://crowdfunding-dapp-diksha.netlify.app/",
+      image: employee,
+      source_code_link: "https://github.com/diksha1627/Employee-Management-Frontend",
+      live_site_link:"https://employee-management-diksha.netlify.app/",
     },
-    // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "CrowdFunding App",
+      description:
+        "Crowdfunding is a way for bringing capital up in little sums from an expansive gathering of individuals utilizing the Internet and online networking. This app enable users and investors to do that.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "solidity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "web3",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: crowdfunding,
+      source_code_link: "https://github.com/diksha1627/CrowdFunding-client-side",
+      live_site_link:"https://crowdfunding-dapp-diksha.netlify.app/",
+    },
+    {
+      name: "Travel Blog",
+      description:
+        "Travel Blog App from travel enthusiats to post about their experience using images and can update their posts. People write and post on their websites, blogs and social media platforms in a concerted effort to brand themselves as travel specialists. ",
+      tags: [
+        {
+          name: "open in desktop",
+          color: "white-text-gradient",
+        },
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: travelBlog,
+      source_code_link: "https://github.com/diksha1627/TravelBlog-frontend",
+      live_site_link:"https://travel-blog-diksha.netlify.app/",
+    },
+     {
+       name: "Pokemon Game",
+       description:
+         "The game has simple setup ,typically the main character has to save himself from the enemies by running and jumping over them or just getting to the next level in certain amount of time .The game usually feature simple plots and attractive theme .The objective of this game is keeping the main character out of the enemy. On your way you will run into a turtle creature. All of these characters try to slow you down and keep you from reaching your goal.",
+       tags: [
+        {
+          name: "open in desktop",
+          color: "white-text-gradient",
+        },
+         {
+           name: "HTML",
+           color: "blue-text-gradient",
+         },
+         {
+           name: "JavaScript",
+           color: "green-text-gradient",
+         },
+         {
+           name: "css",
+           color: "pink-text-gradient",
+         },
+       ],
+       image: pokemon,
+       source_code_link: "https://github.com/diksha1627/project.github.io",
+       live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
+     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, certificates, projects };

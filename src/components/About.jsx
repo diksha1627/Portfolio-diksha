@@ -47,12 +47,36 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
+        I'm a skilled software developer with experience in C++,C,Java and
         JavaScript, and expertise in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
+        
       </motion.p>
+      <motion.a
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
+        href="https://github.com/diksha1627"
+      >
+       Github link&nbsp;&nbsp;&nbsp;
+      </motion.a>
+
+      <motion.a
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
+        href="https://www.linkedin.com/in/diksha-buxani-6bb1a1205/"
+      >
+      &nbsp;  LinkedIn Profile  &nbsp;  &nbsp;  &nbsp; 
+      </motion.a>
+
+      <motion.a
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
+        href="dikshabuxani84745@gmail.com"
+      >
+      &nbsp;Email: dikshabuxani84745@gmail.com
+      </motion.a>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

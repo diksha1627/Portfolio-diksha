@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+import { menu, close ,logo} from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -20,7 +20,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          <img src={menu} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-green text-[18px] 
         cursor-pointer">Diksha<span>| Portfolio</span></p>
         </Link>
