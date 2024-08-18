@@ -28,6 +28,7 @@ import pokemon from "./pokemon-game.png";
 import crowdfunding from "./crowdfunding.png";
 import employee from "./employee-management.png";
 import travelBlog from "./travel-blog.png";
+import frenzy from './company/frenzy.webp'
 
 import bigData from "./cerificates/big-data-challenge.jpeg";
 import Coursera from "./cerificates/Coursera-python.png";
@@ -71,4 +72,5 @@ export {
   threejs,
   matricula,
   iqapex,
+  frenzy
 };

@@ -28,6 +28,7 @@ import {
     doubleSlash,
     internship,
     urekon,
+    frenzy
   } from "../assets";
   
   export const navLinks = [
@@ -110,12 +111,20 @@ import {
       icon: git,
     },
     {
+      name: "React Native",
+      icon: reactjs,
+    },
+    {
       name: "solidity",
       icon: solidity,
     },
     {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "Next JS",
+      icon: reactjs,
     },
   ];
   
@@ -145,6 +154,21 @@ import {
         "Developing and maintaining web applications using mern stack and other related technologies.",
         "Creating new features for a lawyer client website interaction.",
         "Working on backend , creating rest apis for the main website",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company_name: "Frenzy Games Private Ltd (Gameduels)",
+      icon: frenzy,
+      iconBg: "black",
+      date: "Jan 2024 - June 2024",
+      points: [
+        "Developed a gaming app in React Native and Node.js with GraphQL Apollo Server, boosting user engagement",
+        "Created 10+ screens for multiplayer and single-player tournaments, enhancing user retention by 25% and play with friends flow using stylesheet and best practices of React Native and its libraries",
+        "Implemented 10+ backend APIs using Node.js, GraphQL, and PostgreSQL for game data management and user login flow",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -326,6 +350,32 @@ import {
        source_code_link: "https://github.com/diksha1627/project.github.io",
        live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
      },
+     {
+      name: "Trello Clone",
+      description:
+        "The game has simple setup ,typically the main character has to save himself from the enemies by running and jumping over them or just getting to the next level in certain amount of time .The game usually feature simple plots and attractive theme .The objective of this game is keeping the main character out of the enemy. On your way you will run into a turtle creature. All of these characters try to slow you down and keep you from reaching your goal.",
+      tags: [
+       {
+         name: "open in desktop",
+         color: "white-text-gradient",
+       },
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pokemon,
+      source_code_link: "https://github.com/diksha1627/project.github.io",
+      live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
+    },
   ];
   
   export { services, technologies, experiences, certificates, projects };
