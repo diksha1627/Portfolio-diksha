@@ -350,32 +350,32 @@ import {
        source_code_link: "https://github.com/diksha1627/project.github.io",
        live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
      },
-     {
-      name: "Trello Clone",
-      description:
-        "The game has simple setup ,typically the main character has to save himself from the enemies by running and jumping over them or just getting to the next level in certain amount of time .The game usually feature simple plots and attractive theme .The objective of this game is keeping the main character out of the enemy. On your way you will run into a turtle creature. All of these characters try to slow you down and keep you from reaching your goal.",
-      tags: [
-       {
-         name: "open in desktop",
-         color: "white-text-gradient",
-       },
+      {
+       name: "Pokemon Game",
+       description:
+         "The game has simple setup ,typically the main character has to save himself from the enemies by running and jumping over them or just getting to the next level in certain amount of time .The game usually feature simple plots and attractive theme .The objective of this game is keeping the main character out of the enemy. On your way you will run into a turtle creature. All of these characters try to slow you down and keep you from reaching your goal.",
+       tags: [
         {
-          name: "HTML",
-          color: "blue-text-gradient",
+          name: "open in desktop",
+          color: "white-text-gradient",
         },
-        {
-          name: "JavaScript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: pokemon,
-      source_code_link: "https://github.com/diksha1627/project.github.io",
-      live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
-    },
+         {
+           name: "HTML",
+           color: "blue-text-gradient",
+         },
+         {
+           name: "JavaScript",
+           color: "green-text-gradient",
+         },
+         {
+           name: "css",
+           color: "pink-text-gradient",
+         },
+       ],
+       image: pokemon,
+       source_code_link: "https://github.com/diksha1627/project.github.io",
+       live_site_link:"https://pokemon-game-diksha1627.netlify.app/",
+     },
   ];
   
   export { services, technologies, experiences, certificates, projects };
