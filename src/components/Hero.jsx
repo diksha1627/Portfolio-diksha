@@ -36,8 +36,9 @@ const Hero = () => {
 
     </div>
 
-    <div>
-    <Lottie animationData={animationData} loop={true}  className="w-[100rem] h-[38rem] relative top-[50px]" />
+    <div className="">
+    <Lottie animationData={animationData} loop={true}  className="md:w-[50rem] lg:h-[38rem] lg:w-[50rem] 
+    sm:h-[30rem] sm:w-[50rem] h-[38rem] relative top-[50px] " />
 
     </div>
     {/* <ComputersCanvas /> */}
