@@ -28,7 +28,9 @@ import {
     doubleSlash,
     internship,
     urekon,
-    frenzy
+    frenzy,
+    joneast,
+    healthcare
   } from "../assets";
   
   export const navLinks = [
@@ -174,6 +176,21 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    {
+      title: "Software Developer (MERN Stack)",
+      company_name: "Jon East Digital Media",
+      icon: joneast, // You'll need to add this image to your assets
+      iconBg: "#383E56",
+      date: "September 2024 - Current",
+      points: [
+        "Building interactive, responsive web services using Next.js and React.js with emphasis on dynamic UI/UX development.",
+        "Developed and maintained CMS and admin panels using Next.js, Redux, Tailwind CSS, and MUI with WebSocket integration for real-time updates.",
+        "Contributed to microfrontend architecture for modular development and deployment, improving scalability and maintainability.",
+        "Created full-stack applications using React, MongoDB, Node.js, Express, and Docker to analyze GitHub data.",
+        "Implemented unit testing using Jest and React Testing Library to ensure performance and reliability.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      ],
+    },
 
   ];
   
@@ -229,6 +246,36 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Health Tracker Web App",
+      description:
+        "Developed a comprehensive health platform for logging and visualizing blood sugar levels with Google sign-in authentication. Features an ML model using scikit-learn that predicts diabetes risk, automating tracking and monitoring for users.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "green-text-gradient",
+        },
+        {
+          name: "python",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ml",
+          color: "green-text-gradient",
+        },
+      ],
+      image: healthcare, // Replace with health tracker image
+      source_code_link: "https://github.com/diksha1627/heath-tracker-backend",
+      live_site_link: "https://health-tracker-frontend-tau.vercel.app/",
+    },
     {
       name: "Employee Managemnt App",
       description:

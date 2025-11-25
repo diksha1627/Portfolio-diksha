@@ -1,81 +1,113 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { menu, close ,logo} from "../assets";
+import { menu, close, logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center 
-    py-5 fixed top-0 z-20 bg-primary`} >
-      <div className="w-full fex justify-between items-center max-w-7xl
-      mx-auto ">
+    <nav className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 backdrop-blur-md bg-primary/80 border-b border-white/10 shadow-lg`}>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        
+        {/* Logo Section */}
         <Link
           to='/'
-          className="flex items-center gap-2"
+          className="flex items-center gap-3 group"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-green text-[18px] 
-        cursor-pointer">Diksha<span>| Portfolio</span></p>
+          <div className="w-11 h-11 rounded-full bg-gradient-to-br from-green-400 to-blue-500 p-0.5 transition-transform group-hover:scale-110">
+            <div className="w-full h-full rounded-full bg-primary flex items-center justify-center">
+              <img src={logo} alt="logo" className="w-7 h-7 object-contain" />
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <p className="text-white text-[20px] font-bold tracking-tight">
+              Diksha
+              <span className="text-green-400 font-normal ml-1">| Portfolio</span>
+            </p>
+          </div>
         </Link>
-        <ul className='list-none hidden sm:flex justify-end items-center flex-row gap-10'>
+
+        {/* Desktop Navigation */}
+        <ul className='list-none hidden sm:flex items-center gap-8'>
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+            <li key={nav.id}>
+              <a 
+                href={`#${nav.id}`}
+                className={`relative text-[16px] font-medium transition-colors duration-300 
+                  ${active === nav.title ? "text-white" : "text-secondary"}
+                  hover:text-white group`}
+                onClick={() => setActive(nav.title)}
+              >
+                {nav.title}
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-green-400 to-blue-500 transition-all duration-300
+                  ${active === nav.title ? "w-full" : "w-0 group-hover:w-full"}`} />
+              </a>
             </li>
           ))}
         </ul>
 
-
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
-            src={!toggle ? menu : close}
-            alt="menu"
-            className="w-[28px] h-[28px]
-           object-contain cursor-pointer"
+        {/* Mobile Menu Button */}
+        <div className="sm:hidden flex items-center">
+          <button
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
             onClick={() => setToggle(!toggle)}
-          />
+            aria-label="Toggle menu"
+          >
+            <img
+              src={!toggle ? menu : close}
+              alt="menu"
+              className="w-6 h-6 object-contain"
+            />
+          </button>
 
-          <div className={`${!toggle ? 'hidden' : 'flex'}
-           p-6 black-gradient absolute
-           top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-
-            <ul className='list-none flex justify-end flex-col items-start gap-4'>
-              {navLinks.map((nav) => (
+          {/* Mobile Menu Dropdown */}
+          <div className={`${!toggle ? 'opacity-0 pointer-events-none translate-y-4' : 'opacity-100 translate-y-0'}
+            transition-all duration-300 ease-out
+            absolute top-[calc(100%+0.5rem)] right-4 
+            min-w-[200px] p-4
+            bg-gradient-to-br from-gray-900 to-gray-800 
+            backdrop-blur-lg
+            border border-white/10
+            rounded-2xl shadow-2xl`}>
+            
+            <ul className='list-none flex flex-col gap-3'>
+              {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`${active === nav.title ? 
-                    "text-white" : 
-                    "text-secondary"
-                    }  font-poppins
-                    text-[16px] font-medium cursor-pointer`}
-                  onClick={() => {setActive(nav.title);
-                  setToggle(!toggle);}}
+                  className="transform transition-all duration-300"
+                  style={{
+                    transitionDelay: toggle ? `${index * 50}ms` : '0ms'
+                  }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a 
+                    href={`#${nav.id}`}
+                    className={`block px-4 py-3 rounded-lg text-[15px] font-medium transition-all duration-200
+                      ${active === nav.title 
+                        ? "text-white bg-gradient-to-r from-green-400/20 to-blue-500/20 border-l-2 border-green-400" 
+                        : "text-secondary hover:text-white hover:bg-white/5"}
+                    `}
+                    onClick={() => {
+                      setActive(nav.title);
+                      setToggle(false);
+                    }}
+                  >
+                    {nav.title}
+                  </a>
                 </li>
               ))}
             </ul>
-
           </div>
         </div>
 
-
-
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

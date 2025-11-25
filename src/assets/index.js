@@ -29,6 +29,8 @@ import crowdfunding from "./crowdfunding.png";
 import employee from "./employee-management.png";
 import travelBlog from "./travel-blog.png";
 import frenzy from './company/frenzy.webp'
+import joneast from './company/joneast.png'
+import healthcare from './company/healthcare.png'
 
 import bigData from "./cerificates/big-data-challenge.jpeg";
 import Coursera from "./cerificates/Coursera-python.png";
@@ -72,5 +74,7 @@ export {
   threejs,
   matricula,
   iqapex,
-  frenzy
+  frenzy,
+  joneast,
+  healthcare
 };
